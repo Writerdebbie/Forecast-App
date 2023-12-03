@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My New WeatherApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a City here..."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input
+            type="submit"
+            value="search"
+            class="search-form-submitButton"
+          />
+        </form>
+      </header>
+      <main>
+        <div class="weather-info" id="weather-info">
+          <div>
+            <h1 class="weather-city" id="weather-city"></h1>
+            <p class="weather-details">
+              <span id="time">Saturday 14:20</span>, <span id="description"></span>.
+              <br />
+              Humidity: <strong id="humidity">63%</strong>, Wind: <strong id="wind">23km/hr</strong>.
+            </p>
+          </div>
+          <div class="weather-temperature">
+            <div id="icon">
+              <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-night.png"
+              class="temperature-icon"
+              />
+              </div>
+            <div class="temperature-value" id="temperature-value"></div>
+            <div class="temperature-unit">℃</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project is coded and built by
+        <a href="https://github.com/Writerdebbie">First_RiaLink</a>
+        ,it is
+        <a href="https://github.com/Writerdebbie/NewWeatherApp">
+          Open-Sourced on GitHub</a
+        >
+        and hosted
+        <a href="https://fantastic-first-rialink-app.netlify.app/"
+          >on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
