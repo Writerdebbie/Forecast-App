@@ -22,6 +22,9 @@ function formatDate(date) {
         minutes = `0${minutes}`
     }
     let hours = date.getHours();
+    if (hours < 10) {
+        hours = `0${hours}`
+    }
     let days = [
         "Sunday",
         "Monday",
@@ -51,4 +54,4 @@ function initiateSearch(event) {
 }
 let searchElement = document.querySelector("#search-form");
 searchElement.addEventListener("submit", initiateSearch);
-searchCity("Paris");
+searchCity("Paris")
