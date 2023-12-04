@@ -73,21 +73,30 @@ main {
   margin-top: 8px;
   font-size: 28px;
 }
+
 .weather-forecast{
- margin-top:20px;
+ margin-top:10px;
  text-align: center;
+ display: flex;
+ justify-content: space-between;
 }
 .forecast-date{
   font-size: 20px;
   color: black;
   opacity: 0.7;
 }
+.forecast-icon{
+  font-size: 30px;
+}
 .forecast-temperature{
   font-size: 15px;
+  display: inline;
+  color: #f65282;
 }
-.forecast-temp-min{
-  opacity: 0.7;
+.forecast-temperature strong{
+  margin-right: 7px;
 }
+
 footer {
   border-top: 1.5px solid #f65282;
   padding: 30px 0 0 0;
