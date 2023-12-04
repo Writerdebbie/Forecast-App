@@ -1,6 +1,6 @@
 body {
   background-color: #f9f7fe;
-  font-family: "Pacifico", cursive;
+  font-family: 'Bebas Neue', sans-serif;
 }
 .container {
   background: white;
@@ -72,6 +72,21 @@ main {
 .temperature-unit {
   margin-top: 8px;
   font-size: 28px;
+}
+.weather-forecast{
+ margin-top:20px;
+ text-align: center;
+}
+.forecast-date{
+  font-size: 20px;
+  color: black;
+  opacity: 0.7;
+}
+.forecast-temperature{
+  font-size: 15px;
+}
+.forecast-temp-min{
+  opacity: 0.7;
 }
 footer {
   border-top: 1.5px solid #f65282;
